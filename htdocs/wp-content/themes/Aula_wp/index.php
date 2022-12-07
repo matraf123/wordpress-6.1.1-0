@@ -50,74 +50,7 @@ get_header();
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0px 5%;">
-    <div class="container-fluid" style="border-top: 1px solid #fff; padding: 0px;">
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto" style="width: 100%;justify-content: space-between;">
-          <li class="nav-item">
-            <a class="nav-link" href="/">PÁGINA INICIAL</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              CURSOS
-            </a>
-            <div class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
-              <div class="row">
-                <div class="col-md-4">
-                  <a class="dropdown-item" href="/cursos/angular"><ion-icon name="logo-angular"></ion-icon>Angular</a>
-                  <a class="dropdown-item" href="/cursos/aplicativos"><ion-icon name="logo-ionic"></ion-icon>Aplicativos</a>
-                  <a class="dropdown-item" href="/cursos/arquitetura"><ion-icon name="archive"></ion-icon>Arquitetura</a>
-                  <a class="dropdown-item" href="/cursos/sql"><ion-icon name="server"></ion-icon>Banco de Dados</a>
-                  <a class="dropdown-item" href="/cursos/cache"><ion-icon name="bar-chart"></ion-icon>Cache</a>
-                  <a class="dropdown-item" href="/cursos/c-sharp"><ion-icon name="map"></ion-icon>C-Sharp</a>
-                  <a class="dropdown-item" href="/aulas/devops"><ion-icon name="logo-deviantart"></ion-icon>Devops</a>
-                  <a class="dropdown-item" href="/cursos/javascript"><ion-icon name="logo-nodejs"></ion-icon>ECMAScript(JavaScript)</a>
-                  <a class="dropdown-item" href="/cursos/html"><ion-icon name="logo-html5"></ion-icon>HTML/CSS</a>
-                </div>
-                <div class="col-md-5">
-                  <a class="dropdown-item" href="/aulas/graphql"><ion-icon name="share-social-outline"></ion-icon>GraphQL</a>
-                  <a class="dropdown-item" href="/aulas/infra_nuvem"><ion-icon name="partly-sunny"></ion-icon>Infraestrutura na Nuvem</a>
-                  <a class="dropdown-item" href="/aulas/integracao-continua"><ion-icon name="cube"></ion-icon>Integração Contínua</a>
-                  <a class="dropdown-item" href="/cursos/java"><ion-icon name="logo-stencil"></ion-icon>Java</a>
-                  <a class="dropdown-item" href="/aulas/kubernetes"><ion-icon name="leaf"></ion-icon>Kubernetes</a>
-                  <a class="dropdown-item" href="/aulas/logica_programacao_javascript"><ion-icon name="logo-javascript"></ion-icon>Lógica de Programação</a>
-                  <a class="dropdown-item" href="/aulas/multiplas_apis"><ion-icon name="code-slash"></ion-icon>Multiplas APIs</a>
-                  <a class="dropdown-item" href="/cursos/negocios-tecnologicos"><ion-icon name="business-outline"></ion-icon>Negócios e Tecnologia</a>
-                  <a class="dropdown-item" href="/aulas/nextjs"><ion-icon name="earth"></ion-icon>Next.js</a>
-                </div>
-                <div class="col-md-3">
-                  <a class="dropdown-item" href="/cursos/php"><ion-icon name="paw"></ion-icon>PHP</a>
-                  <a class="dropdown-item" href="/aulas/logica_programacao_python"><ion-icon name="logo-python"></ion-icon>Python</a>
-                  <a class="dropdown-item" href="/cursos/react"><ion-icon name="logo-react"></ion-icon>React</a>
-                  <a class="dropdown-item" href="/cursos/ruby"><ion-icon name="diamond"></ion-icon>Ruby on Rails</a>
-                  <a class="dropdown-item" href="/aulas/seguranca"><ion-icon name="shield-checkmark"></ion-icon>Segurança</a>
-                  <a class="dropdown-item" href="/aulas/sql-server"><ion-icon name="server"></ion-icon>SQL Server</a>
-                  <a class="dropdown-item" href="/cursos/vuejs"><ion-icon name="logo-vue"></ion-icon>Vue.js</a>
-                  <a class="dropdown-item" href="/cursos/wordpress"><ion-icon name="logo-wordpress"></ion-icon>WordPress</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cursos/vitalicio">CURSOS VITALÍCIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/comunidade-site">COMUNIDADE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/agenda">AGENDAR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.youtube.com/c/daniloaparecido">YOUTUBE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=5511976144154&amp;text=Oi%20Danilo%2C%20quero%20marcar%20uma%20consultoria%20ou%20aula%20particular">CONTATE-NOS</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-dark nav-style nav-mobile py-3">
@@ -244,40 +177,43 @@ get_header();
       );
       $query = new WP_Query($args);
       while ($query->have_posts()) : $query->the_post();?>
-
-    <div>  
-          <a href="/aulas/dotnet_csharp"><img src="https://www.torneseumprogramador.com.br/images/mentorias/dotnet-csharp.jpeg"></a>
-        
-        <div class="content-legend">
-          <h6>DotNet 7 | C# 11</h6>
-          <span>Danilo Aparecido</span>
-          <h5 class="mt-2">Comunidade</h5>
-        </div>
-    </div>
-
-      <!-- post -->
-      <div class="col-md-4">
-        <div class="post post-sm">
-          <a class="post-img" href="<?php echo get_permalink(); ?>"><img src="<?php echo
-          get_the_post_thumbnail_url(); ?>" alt=""></a>
-          <div class="post-body">
-            <div class="post-category">
-              <?php foreach (get_the_category() as $category){ ?>
-                <a href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a>
-              <?php } ?>
+  
+          <a href="<?php echo get_permalink(); ?>">
+            <h1>
+              <?php the_title(); ?>
+            </h1>              
+            <div>
+              <?php the_field('modulo'); ?>
             </div>
-            <h3 class="post-title">
-              <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
-            </h3>
-            <ul class="post-meta">
-              <!--li><?php echo get_the_author(); ?></li-->
-              <li><?php echo get_the_date(); ?></li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-                <!-- /post -->
-      <?php endwhile; ?>
+          </a>
+          <hr>
+        
+        <?php endwhile; ?>
+    </div>
+  </div>
+
+  <section id="courses" class="pb-3 pt-5">
+  <h1 class="curso-h1">Matérias</h1>
+  
+  <div class="courses">
+    <?php
+      $args = array(
+        'posts_per_page'=> 6
+      );
+      $query = new WP_Query($args);
+      while ($query->have_posts()) : $query->the_post();?>
+  
+          <a href="<?php echo get_permalink(); ?>">
+            <h1>
+              <?php the_title(); ?>
+            </h1>  
+          </a>
+          <hr>
+        
+        <?php endwhile; ?>
+    </div>
+  </div>
+      
       <div>
     
 

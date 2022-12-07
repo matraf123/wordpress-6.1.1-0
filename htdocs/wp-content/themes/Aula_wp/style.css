@@ -95,3 +95,7 @@ Aprenda as tecnologias mais atuais no mercado, com profissionais dedicados a ofe
 
 /* Categories 01 to 03 are the basics. */
 
+ .link-aula, .link-aula:hover{
+    text-decoration: none;
+    color: #0A2F40;
+}
