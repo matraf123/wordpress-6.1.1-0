@@ -44,7 +44,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<link rel="stylesheet", href=" <?php printf('%s/css/font-awesome.min.css', get_template_directory_uri()); ?> " >
+<link rel="stylesheet", href="'C:\Bitnami\wordpress-6.1.1-0\apps\wordpress\htdocs\wp-content\themes\Aula_wp\style.css">
+<link rel="stylesheet", href=" <?php printf('C:\Bitnami\wordpress-6.1.1-0\apps\wordpress\htdocs\wp-content\themes\Aula_wp\style.css', get_template_directory_uri()); ?> " >
 
 <!-- Initialize Swiper -->
 <script type="text/javascript">

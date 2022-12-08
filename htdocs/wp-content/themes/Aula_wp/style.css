@@ -99,3 +99,28 @@ Aprenda as tecnologias mais atuais no mercado, com profissionais dedicados a ofe
     text-decoration: none;
     color: #0A2F40;
 }
+
+.paginacao{
+    text-align: center;
+    width: 100%;
+    padding: 30px; 
+}
+.paginacao a, .paginao a:hover{
+    color: 0A2F40;
+}
+.paginacao .current{
+    color: #ccc;
+}
+.comment-form-comment textarea{
+    width:  100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-submit .submit{
+    background: #019e01;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
