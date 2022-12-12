@@ -1,9 +1,14 @@
 <?php 
-// [reder_aulas titulo="Aulas do torne-se um promagador"]
 
-function render_aulas( $atts ){
-    $a = shortcode_atts( $atts );
-    
-    return "foo = {$atts}";
+
+
+// [bartag foo="foo-value"]
+function render_aulas( $atts ) {
+	$a = shortcode_atts( array(
+		'title' => 'Render Aulas',
+		'test' => 'Teste 1',
+	), $atts );
+
+	return "foo = {$a['foo']}";
 }
-add_shortcode('render_aulas', 'render_aulas');
+add_shortcode( 'render_aulas', 'render_aulas' );
